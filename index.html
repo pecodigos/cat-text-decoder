@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Cat Text Decoder</title>
+</head>
+<body>
+  <main class="container">
+    <section class="container__child">
+      <div class="container__child__leftbox">
+        <div class="container__child_titleboxandtext">    
+          <div class="container__child__titlebox">
+            <h1 class="container__child__title">cat text decoder</h1>
+            <div class="caret"></div>
+          </div>
+          <textarea class="container__child__input" placeholder="Type here..."></textarea>
+        </div>
+        <div class="container__child__leftbottom">
+          <h5 class="container__child__rule">All diacritics will be removed, and all upper-case characters will be converted to lower-case.</h5>
+          <div class="container__child__btns">
+            <button onclick="encryptText()" class="container__child__btn">Encrypt</button>
+            <button onclick="decryptText()" class="container__child__btn">Decrypt</button>
+          </div>
+        </div> 
+      </div>
+      <div class="container__child__rightbox">
+        <div class="container__child__rectangle">
+            <h2 class="container__child__output" id="messageToCopy"></h3>
+          <img src="./img/magcat.png" id="lupe-cat" alt="Cat holding a magnifying glass" class="mag-cat">
+          <div class="container__child__rightbottom">
+            <div class="container__child__texts">
+              <h3 class="container__child__text1">No messages found</h3>
+              <h4 class="container__child__text2">Please enter a message that you want to encrypt.</h4>
+              <button onclick="copyText()" id="copyButton" class="container__child__copybtn">Copy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="credits">
+    <h6 class="madeby">Made by </h6>
+    <img src="./img/github.png" class="githublogo" alt="GitHub Logo">
+    <a href="https://github.com/pecodigos" class="pecodigos">/pecodigos</a>
+  </footer>
+  <script src="app.js" defer></script>
+</body>
+</html>

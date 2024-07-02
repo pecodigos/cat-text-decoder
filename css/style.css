@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+body 
+{
+  background-color: black;
+  height: 100%;
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+
+.container 
+{
+  margin: 4rem 10rem;
+  display: flex;
+}
+
+.container__child 
+{
+  display: grid;
+  font-family: "JetBrains Mono", monospace;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+}
+
+.container__child__leftbox 
+{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-around;
+  gap: 10rem;
+}
+
+.container__child__leftbottom 
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.container__child__rightbox 
+{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1.5rem; 
+}
+
+.container__child__rectangle 
+{
+  width: 22rem;
+  height: 45rem;
+  background: rgb(226, 226, 226);
+  border-radius: 2rem;
+  box-shadow: 0.3125rem 0.3125rem 0.3125rem #3a3a3a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+
+.container__child__title 
+{
+  font-size: 3rem;
+  color: white;
+}
+
+.container__child_titleboxandtext 
+{
+  gap: 5rem;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.caret 
+{
+  background-color: white;
+  width: 0.4rem;
+  height: 2.5rem;
+  animation: blink 1.25s infinite;
+}
+
+@keyframes blink 
+{
+  0%, 100% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: white;
+  }
+}
+
+.container__child__titlebox 
+{
+  align-items: center;
+  display: flex;
+}
+
+.container__child__input 
+{
+  font-size: 1.6rem;
+  color: white;
+  background-color: transparent;
+  font-family: "JetBrains Mono", monospace;
+  outline: none;
+  border: none;
+  resize: none;
+  padding: 1rem;
+  height: 20rem;
+}
+
+h2
+{
+  font-size: 1.3rem;
+}
+
+.container__child__output
+{
+  display: flex;
+  flex-direction: column;
+  word-break: break-word;
+  visibility: hidden;
+}
+
+.container__child__btns 
+{
+  color: black;
+  justify-content: center;
+  gap: 3.125rem;
+  display: flex;
+}
+
+.container__child__btn 
+{
+  width: 12.5rem;
+  height: 3.125rem;
+  font-size: 1.25rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+.container__child__texts 
+{
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5625rem;
+  align-items: center;
+}
+
+.container__child__text1 
+{
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.container__child__text2 
+{
+  font-size: 0.7rem;
+}
+
+.container__child__rule 
+{
+  color: white;
+  font-size: 12px;
+}
+
+.mag-cat 
+{
+  height: 20.3125rem;
+  width: 14.6875rem;
+}
+
+.container__child__copybtn 
+{
+  width: 12.5rem;
+  height: 3.125rem;
+  font-size: 1.25rem;
+  background-color: white;
+  border-radius: 1rem;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.credits 
+{
+  display: flex;
+  flex-direction: row;
+  gap: 0.3rem;
+  justify-content: center;
+  align-items: center;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.madeby 
+{
+  background-color: transparent;
+  text-decoration: none;
+  color: white;
+}
+
+.pecodigos 
+{
+  background-color: transparent;
+  text-decoration: none;
+  color: rgb(152, 152, 240);
+}
+
+.githublogo 
+{
+  height: 2rem;
+  width: 2rem;
+}
