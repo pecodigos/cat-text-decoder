@@ -2,11 +2,11 @@
 
 ## Este  é o desafio final da segunda fase do curso ONE - Oracle Next Education com parceria com a Alura.
 
-A ideia foi criar um decodificador com dois temas centrais:
+### Temas centrais:
 - Algo que se parecesse com um terminal;
 - Gatos.
 
-Features:
+### Features:
 - Traduz a letra "e" para "enter", a letra "i" para "imes", a letra "a" para "ai", a letra "o" para "ober" e a letra "u" para "ufat";
 - Todo letra com algum acento digitado será convertida em uma letra sem acento (e.g. ã -> a, ç -> c, é -> e...);
 - Toda letra maiúscula será convertida para letra minúscula;
