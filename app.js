@@ -8,13 +8,18 @@ function displayText(tag, text)
 // Transition to the second part where the input had already been entered
 function secondScreen()
 {
+    // Take out messages displayed before the output
     displayText("h3", "");
     displayText("h4", "");
+    
+    // Remove cat img
     document.getElementById("lupe-cat").style.display = "none";
+    
+    // Make copy button appear and be clickable
     let copyButton = document.getElementById("copyButton");
     copyButton.style.visibility = "visible";
     copyButton.style.pointerEvents = "auto";
-    document.getElementById("messageToCopy").style.visibility = "visible"
+    document.getElementById("messageToCopy").style.visibility = "visible";
 }
 
 // Encrypt the user input text 
