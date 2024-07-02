@@ -3,8 +3,8 @@
 ## Este  é o desafio final da segunda fase do curso ONE - Oracle Next Education com parceria com a Alura.
 
 ### Temas centrais:
-- Algo que se parecesse com um terminal;
-- Gatos.
+- Algo que se parece com um terminal;
+- Gato.
 
 ### Features:
 - Traduz a letra "e" para "enter", a letra "i" para "imes", a letra "a" para "ai", a letra "o" para "ober" e a letra "u" para "ufat";
