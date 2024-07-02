@@ -82,10 +82,7 @@ function removeDiacritics(userInput)
 function copyText() 
 {
     let textToClipboard = document.getElementById("messageToCopy").innerText;
-    if (textToClipboard != "")
-        {
-            navigator.clipboard.writeText(textToClipboard);
-            document.getElementById("messageToCopy").innerText = "";
-        }
-
+    
+    navigator.clipboard.writeText(textToClipboard);
+    document.getElementById("messageToCopy").innerText = "";
 }
