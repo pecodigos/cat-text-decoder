@@ -56,7 +56,7 @@ function decryptText()
 {
     let textToDecrypt = document.querySelector("textarea").value;
     
-    // Check if the user didn't encrypt anything yet
+    // Check if text area is empty
     if (textToDecrypt.trim() != "")
         {
             let decryptedText = removeDiacritics(textToDecrypt.toLowerCase())
@@ -66,6 +66,7 @@ function decryptText()
                                 .replace(/ober/g, "o")
                                 .replace(/ufat/g, "u");
             displayText("h2", decryptedText);
+            secondScreen();
             document.querySelector("textarea").value = "";
         }
 
