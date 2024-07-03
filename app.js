@@ -19,6 +19,8 @@ function secondScreen()
     let copyButton = document.getElementById("copyButton");
     copyButton.style.visibility = "visible";
     copyButton.style.pointerEvents = "auto";
+    
+    // Make outputted text invisible after being copied
     document.getElementById("messageToCopy").style.visibility = "visible";
 }
 
@@ -91,4 +93,5 @@ function copyText()
     
     navigator.clipboard.writeText(textToClipboard);
     document.getElementById("messageToCopy").innerText = "";
+    document.getElementById("messageToCopy").style.visibility = "hidden";
 }
