@@ -120,6 +120,7 @@ body
 h2
 {
   font-size: 1.3rem;
+  background-color: transparent;
 }
 
 .container__child__output
