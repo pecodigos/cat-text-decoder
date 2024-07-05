@@ -3,17 +3,14 @@
 body 
 {
   background-color: black;
-  height: 100%;
   box-sizing: border-box;
-  display: grid;
   place-items: center;
-  width: 100%;
 }
 
 .container 
 {
-  margin: 4rem 10rem;
-  display: flex;
+  padding: 3% 12%;
+  display: grid;
 }
 
 .container__child 
@@ -168,7 +165,7 @@ body
 .container__child__rule 
 {
   color: white;
-  font-size: 12px;
+  font-size: 0.8rem;
 }
 
 .mag-cat 
@@ -216,4 +213,56 @@ body
 {
   height: 2rem;
   width: 2rem;
+}
+
+@media (max-width: 1200px)
+{
+  .container
+  {
+    flex-direction: column;
+    padding: 5%;
+    display: flex;
+  }
+  .container__child
+  {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .container__child__leftbox
+  {
+    align-items: center;
+    gap: 5%;
+    flex-direction: column;
+  }
+
+  .container__child__rightbox
+  {
+    align-items: center;
+    padding: 2%;
+    gap: 2%;
+  }
+
+  .container__child__rectangle
+  {
+    width: 15rem;
+    height: 30rem;
+  }
+
+  .container__child__input 
+  {
+    height: auto;
+  }
+
+  .container__child__btns
+  {
+    margin-bottom: 2%;
+  }
+
+  .mag-cat
+  {
+    height: 14rem;
+    width: 11rem;
+  }
+
 }
