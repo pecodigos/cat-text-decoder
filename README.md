@@ -1,6 +1,6 @@
 # Desafio do Decodificador
 
-## Este  é o desafio final da segunda fase do curso ONE - Oracle Next Education com parceria da Alura.
+## Desafio final da segunda fase do curso ONE - Oracle Next Education com parceria da Alura.
 
 ### Temas:
 - Algo que se parece com um terminal;
