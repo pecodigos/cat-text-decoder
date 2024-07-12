@@ -8,7 +8,7 @@
 
 ### Features:
 - Traduz a letra "e" para "enter", a letra "i" para "imes", a letra "a" para "ai", a letra "o" para "ober" e a letra "u" para "ufat";
-- Todo letra com algum acento digitado será convertida em uma letra sem acento (e.g. ã -> a, ç -> c, é -> e...);
+- Toda letra com algum acento digitado será convertida em uma letra sem acento (e.g. ã -> a, ç -> c, é -> e...);
 - Toda letra maiúscula será convertida para letra minúscula;
 - Há 3 botões: "Encrypt" (criptografar), "Decrypt" (descriptograr) e "Copy" (copiar). Após utilizar os dois primeiros, o input será apagado e enviado para o output. E o botão copy, após copiar o output, apagará o mesmo;
 - Não é possível usar o botão Encrypt ou o Decrypt caso: não haja texto escrito para isso, ou caso só haja espaço no texto (um alerta irá avisar sobre isso);
