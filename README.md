@@ -14,6 +14,7 @@
 - Não é possível usar o botão Encrypt ou o Decrypt caso: não haja texto escrito para isso, ou caso só haja espaço no texto (um alerta irá avisar sobre isso);
 - (EXTRA): Footer com meus créditos com um link que redireciona para meu GitHub (este aqui).
 
+##
 
 <b>Vercel deploy:</b> 
 https://cat-text-decoder.vercel.app/
