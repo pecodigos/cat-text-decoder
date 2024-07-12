@@ -69,7 +69,7 @@ body
   color: white;
 }
 
-.container__child_titleboxandtext 
+.container__child__titleboxandtext 
 {
   gap: 5rem;
   display: flex;
