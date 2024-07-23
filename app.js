@@ -86,7 +86,7 @@ function removeDiacritics(userInput)
     return userInput
         .normalize("NFD")
         .replace(/[\u0300-\u036f]/g, "") // Remove diacritics
-        .replace(/[^a-zA-Z\s]/g, ""); // Remove special characters and numbers but keep letters and spaces
+        .replace(/[^a-zA-Z\s]/g, ""); // Remove special characters and numbers
 }
 
 
