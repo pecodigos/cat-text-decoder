@@ -30,7 +30,7 @@ function encryptText()
     let inputText = document.querySelector("textarea").value;
 
     // Check if the user didn´t input anything yet or had only inputted spaces
-    if (inputText.trim() != "")
+    if (removeDiacritics(inputText.trim()) != "")
         {
             // Regex to Encrypt
             let encryptedText = removeDiacritics(inputText.toLowerCase())
@@ -48,7 +48,7 @@ function encryptText()
     // Error message
     else
     {
-        alert("Error #01:\nPlease, enter a message to be encrypted first.")
+        alert("Error #01:\nPlease, enter a valid message to be encrypted first.")
         return 1;
     }
 }
@@ -59,7 +59,7 @@ function decryptText()
     let textToDecrypt = document.querySelector("textarea").value;
     
     // Check if text area is empty
-    if (textToDecrypt.trim() != "")
+    if (removeDiacritics(textToDecrypt.trim()) != "")
         {
             let decryptedText = removeDiacritics(textToDecrypt.toLowerCase())
                                 .replace(/enter/g, "e")
@@ -75,16 +75,20 @@ function decryptText()
     // Error message
     else
     {
-        alert("Error #02:\nPlease, first you need to enter a message to be encrypted.");
+        alert("Error #02:\nPlease, enter a valid message that you want to decrypt.");
         return 2;
     }
 }
 
-// Remove diacritcs
+// Remove diacritics, special characters and numbers
 function removeDiacritics(userInput)
 {
-    return userInput.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    return userInput
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "") // Remove diacritics
+        .replace(/[^a-zA-Z\s]/g, ""); // Remove special characters and numbers but keep letters and spaces
 }
+
 
 // Copy the outputted text to clipboard
 function copyText() 
