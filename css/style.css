@@ -215,6 +215,83 @@ body
   width: 2rem;
 }
 
+@media (max-height: 768px)
+{
+  .container {
+    padding: 2.5% 10%;
+  }
+
+  .container__child__leftbox,
+  .container__child__rightbox {
+    gap: 4rem;
+  }
+
+  .container__child__rectangle {
+    width: 18rem;
+    height: 30rem;
+    padding: 1.5rem;
+  }
+
+  .container__child__input {
+    height: 12rem;
+  }
+
+  .container__child__title {
+    font-size: 2.5rem;
+  }
+
+  .container__child__btn {
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 1rem;
+  }
+
+  .mag-cat {
+    height: 18rem;
+    width: 13rem;
+  }
+
+  .container__child__titleboxandtext {
+    gap: 3rem;
+  }
+
+  .container__child__btns {
+    gap: 2.5rem;
+  }
+
+  .container__child__texts {
+    gap: 1rem;
+  }
+
+  .container__child__text1 {
+    font-size: 1.2rem;
+  }
+
+  .container__child__text2 {
+    font-size: 0.6rem;
+  }
+
+  .container__child__rule {
+    font-size: 0.7rem;
+  }
+
+  .container__child__copybtn {
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 1rem;
+  }
+
+  .credits {
+    gap: 0.2rem;
+    font-size: 0.7rem; 
+  }
+
+  .githublogo {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
+
 @media (max-width: 1200px)
 {
   .container
