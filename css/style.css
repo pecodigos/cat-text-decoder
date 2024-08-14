@@ -52,16 +52,15 @@ body
   height: 45rem;
   background: rgb(226, 226, 226);
   border-radius: 2rem;
-  box-shadow: 0.3125rem 0.3125rem 0.3125rem #3a3a3a;
+  box-shadow: 0.2rem 0.2rem 0.2rem #3a3a3a;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
   gap: 2rem;
   justify-content: space-between;
   
 }
-
 
 .container__child__title 
 {
@@ -116,13 +115,16 @@ body
 
 .container__child__output
 {
-  display: flex;
-  flex-direction: column;
   word-break: break-word;
   visibility: hidden;
   overflow-x: hidden;
   overflow-y: scroll;
   font-size: 1.3rem;
+  text-align: left;
+  margin-right: auto;
+  width: 100%;
+  padding-right: 4%;
+  box-sizing: border-box;
 }
 
 .container__child__btns 
