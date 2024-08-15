@@ -20,7 +20,7 @@ function secondScreen()
     copyButton.style.visibility = "visible";
     copyButton.style.pointerEvents = "auto";
     
-    // Make outputted text invisible after being copied
+    // Make output text visible 
     document.getElementById("messageToCopy").style.visibility = "visible";
 }
 
