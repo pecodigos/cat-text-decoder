@@ -56,7 +56,7 @@ body
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
+  padding: 2rem;
   gap: 2rem;
   justify-content: space-between;
   
