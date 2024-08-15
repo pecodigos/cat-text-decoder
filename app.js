@@ -98,4 +98,5 @@ function copyText()
     navigator.clipboard.writeText(textToClipboard);
     document.getElementById("messageToCopy").innerText = "";
     document.getElementById("messageToCopy").style.visibility = "hidden";
+    location.reload();
 }
